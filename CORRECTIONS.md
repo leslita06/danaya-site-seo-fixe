@@ -57,6 +57,8 @@ seulement par les robots des réseaux sociaux quand un lien est partagé.
     Danaya (Credafrica, Wizall, Paymetrust, Jèko, MAFA) étaient déjà en
     place, sauf MAFA dont aucun logo public n'existe.
 17. `robots.txt` refait et `llms.txt` ajouté, pour les moteurs de réponse.
+18. Les 8 pages secteur portent la réglementation qui les concerne, article par
+    article, et leur FAQ passe de 3 à 7 ou 9 questions.
 
 ## Ce que lisent ChatGPT, Claude, Perplexity et Gemini
 
@@ -76,7 +78,7 @@ Les deux familles sont autorisées ; refuser l'une se fait en passant son bloc d
 
 `llms.txt` à la racine donne le plan du site en texte clair, les 27 pages avec
 leur titre et leur résumé, selon la convention de llmstxt.org. `llms-full.txt`
-porte le contenu entier des pages, 77 Ko, pour un modèle qui veut la matière sans
+porte le contenu entier des pages, 117 Ko, pour un modèle qui veut la matière sans
 parcourir le site.
 
 Deux points restent hors de cette archive et se règlent chez Danaya. Le site en
@@ -103,3 +105,46 @@ de notification écrit directement au prospect.
 Il reste **une étape à faire depuis un compte Danaya**, deux minutes, décrite dans
 `appscript/PROCEDURE.md` : publier le petit script de réception. Tant qu'elle n'est
 pas faite, le formulaire affiche « Formulaire indisponible » au lieu de mentir.
+
+
+## Les pages secteur
+
+Une page de 300 mots ne se fait citer ni par un moteur de recherche ni par un
+moteur de réponse : il n'y a rien à citer. Les huit pages secteur en faisaient
+entre 250 et 310. Chacune porte maintenant ce que le texte officiel exige
+vraiment de ce métier, avec le renvoi à l'article, et un déroulé qui relie chaque
+contrôle à l'exigence correspondante.
+
+| Page | Mots avant | Mots après | Questions |
+|---|---|---|---|
+| Banques | 310 | 1234 | 9 |
+| Microfinances | 307 | 1171 | 8 |
+| Fintech | 279 | 1162 | 8 |
+| Assurances | 265 | 989 | 8 |
+| Notaires | 271 | 977 | 7 |
+| Immobilier | 279 | 961 | 7 |
+| Gaming et casinos | 261 | 895 | 7 |
+| Mobilité et livraison | 255 | 846 | 7 |
+
+Les textes lus, en entier, pour écrire ces pages : la loi uniforme LBC/FT/FP du
+31 mars 2023 adoptée par le Conseil des ministres de l'UMOA, 85 pages, et
+l'instruction n°003-03-2025 du 18 mars 2025 de la BCEAO. Les articles cités le
+sont dans le corps du texte, pour que le lecteur puisse vérifier. Les huit
+adresses officielles citées répondent toutes en HTTP.
+
+Deux précisions de méthode. Les seuils chiffrés, prime d'assurance, mise au
+casino, prix immobilier réglé en espèces, sont renvoyés par la loi à l'autorité
+compétente ou à la CIMA : les pages disent qui fixe le seuil, jamais un montant
+qui n'est pas dans le texte. Et la page Mobilité dit ce que la réglementation
+demande, mais aussi ce qu'elle ne demande pas : une plateforme de mise en
+relation n'est pas un assujetti de la LCB-FT, elle le devient quand elle opère un
+portefeuille ou un service de paiement.
+
+Une affirmation de votre article de blog n'a pas été reprise, faute d'avoir pu la
+vérifier : celle selon laquelle un traitement biométrique demande une
+autorisation préalable de l'Autorité de protection. Les pages de l'Autorité
+accessibles ne la mentionnent pas. À confirmer de votre côté avant de l'écrire.
+
+Ce qui manque encore et qui ne peut venir que de vous : les délais réels de
+vérification, les registres branchés pays par pays, et un cas client par secteur.
+Rien n'a été inventé à leur place.
