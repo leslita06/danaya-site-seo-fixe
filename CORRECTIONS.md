@@ -56,6 +56,35 @@ seulement par les robots des réseaux sociaux quand un lien est partagé.
     Bridge Microfinance et Kolinvest. Les cinq autres noms transmis par
     Danaya (Credafrica, Wizall, Paymetrust, Jèko, MAFA) étaient déjà en
     place, sauf MAFA dont aucun logo public n'existe.
+17. `robots.txt` refait et `llms.txt` ajouté, pour les moteurs de réponse.
+
+## Ce que lisent ChatGPT, Claude, Perplexity et Gemini
+
+Ces moteurs ne passent pas par le même flux que Google, et ils n'exécutent pas de
+JavaScript : ils lisent le HTML servi, tel quel. Trois choses ont été faites pour
+eux.
+
+Le `robots.txt` NOMME maintenant leurs agents, séparés en deux familles parce que
+les conséquences ne sont pas les mêmes. Dix agents de citation (OAI-SearchBot,
+ChatGPT-User, Claude-User, Claude-SearchBot, PerplexityBot, Perplexity-User,
+Google-Extended, DuckAssistBot, Amazonbot, Applebot) lisent la page pour la citer
+dans une réponse : les refuser, c'est disparaître de ces moteurs. Huit agents de
+collecte (GPTBot, ClaudeBot, anthropic-ai, Applebot-Extended, CCBot,
+Meta-ExternalAgent, cohere-ai, Bytespider) alimentent l'entraînement des modèles.
+Les deux familles sont autorisées ; refuser l'une se fait en passant son bloc de
+`Allow` à `Disallow`, sans toucher au reste.
+
+`llms.txt` à la racine donne le plan du site en texte clair, les 27 pages avec
+leur titre et leur résumé, selon la convention de llmstxt.org. `llms-full.txt`
+porte le contenu entier des pages, 77 Ko, pour un modèle qui veut la matière sans
+parcourir le site.
+
+Deux points restent hors de cette archive et se règlent chez Danaya. Le site en
+production sert encore `noindex` à tous les robots, y compris ceux de ChatGPT, de
+Claude et de Perplexity, et `robots.txt` y répond 404 : tant que ce build n'est
+pas déployé, rien de ce qui précède n'a d'effet. Et le domaine est derrière
+Cloudflare, dont l'option de blocage des robots d'IA agit AVANT le `robots.txt` :
+elle est à vérifier dans le tableau de bord.
 
 ## Le formulaire de contact
 
